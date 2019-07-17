@@ -1,0 +1,27 @@
+#!/bin/bash
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2019-07-17T07:37:50Z
+  labels:
+    run: nginx1
+  name: nginx1
+  namespace: default
+  resourceVersion: "34814"
+  selfLink: /api/v1/namespaces/default/services/nginx1
+  uid: c7cd5170-a865-11e9-b954-525400261060
+spec:
+  clusterIP: 10.254.236.103
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32371
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx1
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}

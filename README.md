@@ -32,3 +32,13 @@ cd ./kubernetes
 . kubprovision.sh
 
 ```
+
+# BUGS
+
+# CONTRIBUTING
+
+# SEE ALSO
+
+# AUTHOR
+
+# COPYRIGHT AND LICENSE

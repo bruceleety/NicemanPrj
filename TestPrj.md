@@ -3,6 +3,7 @@
 ## 깃에서 새로운 레포지터리 만듦
 * Docker tool box 설치
 * Docker Quick Start Terminal 실행
+* Vagrant 설치/실행
 
 ## 새 디렉터리에서 아래 클론 시행
 $ git clone https://github.com/bruceleety/NicemanPrj.git
@@ -26,6 +27,8 @@ $ git config --global user.email "bruceleety@gmail.com"
 
 * Docker Build
 ```
+도커 만들어서 엔진엑스 올림
+
 cd ./docker
 . build.sh
 
@@ -33,6 +36,8 @@ cd ./docker
 
 * Docker Hub Push
 ```
+수정 사항 깃허브에 올림
+
 cd ./docker
 . push.sh
 
@@ -44,3 +49,8 @@ cd ./kubernetes
 . kubprovision.sh
 
 ```
+
+## 쿠버네티스 만들기 yaml File 만들고 실행하기
+[root@node1 /]# kubectl run nginx1 --image=brucleety/nginx --port=80 -o yaml > /vagrant/bruceleety/kubernetes/deploy.yaml
+[root@node1 /]# kubectl creat -f /vagrant/bruceleety/kubernetes/deploy.yaml
+
