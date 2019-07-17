@@ -2,8 +2,8 @@
 
 ## 깃에서 새로운 레포지터리 만듦
 * Docker tool box 설치
-* Docker Quick Start Terminal 실행
-* Vagrant 설치/실행
+* Docker Quick Start Terminal 실행 : 도커&Nginx 는 여기서 설치
+* Vagrant 설치/실행 : 쿠버네티스는 여기서 설치
 
 ## 새 디렉터리에서 아래 클론 시행
 $ git clone https://github.com/bruceleety/NicemanPrj.git
